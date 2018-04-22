@@ -18,7 +18,10 @@ begin
     if temp mod 2 = 0 then inc(chet)
     else inc(nechet);
   end;
-
-  writeln(nechet / (chet + nechet) * 100);
+  close(file_input);
+  
+  rewrite(file_output);
+  write(file_output, nechet / (chet + nechet) * 100);
+  close(file_output);
 
 end.
