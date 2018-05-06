@@ -27,7 +27,7 @@ begin
   
   i := 1;
   
-  while i < length_line do begin
+  while i <= length_line do begin
   
     if start_sentence then begin
       if (ord(line[i]) >= ord('A')) and (ord(line[i]) <= ord('Z')) then line[i] := chr(ord(line[i]) + (ord('a') - ord('A')));
